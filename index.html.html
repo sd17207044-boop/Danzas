@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuando el cuerpo reza: danza y religión</title>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1b4d;--sun:#ffb703;--pink:#e63e8b;--teal:#12b5a0;--paper:#fff8ec;--card:#fff;--text:#2a2750}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#15133a;--card:#221f55;--text:#f4efe0;--ink:#f4efe0}}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Fredoka',system-ui,sans-serif;background:var(--paper);color:var(--text);font-size:18px;line-height:1.6}
+h1,h2,h3{font-family:'Bagel Fat One','Fredoka',system-ui,sans-serif;font-weight:400;line-height:1.1;margin:0}
+header{background:var(--ink);color:#fff8ec;text-align:center;padding:64px 20px 90px;position:relative;overflow:hidden}
+header h1{font-size:clamp(2.4rem,7vw,5rem);max-width:14ch;margin:0 auto 16px;color:var(--sun)}
+header p{max-width:52ch;margin:0 auto 24px}
+.orbs span{position:absolute;border-radius:50%;opacity:.35;animation:spin 14s linear infinite}
+.orbs span:nth-child(1){width:180px;height:180px;background:var(--pink);left:-40px;top:30px}
+.orbs span:nth-child(2){width:120px;height:120px;background:var(--teal);right:6%;top:50px;animation-duration:9s}
+.orbs span:nth-child(3){width:70px;height:70px;background:var(--sun);right:22%;bottom:30px;animation-duration:6s}
+@keyframes spin{to{transform:translateY(-18px) scale(1.08)}}
+@media(prefers-reduced-motion:reduce){.orbs span{animation:none}}
+.btn{display:inline-block;border:0;border-radius:999px;padding:12px 24px;font:600 1rem 'Fredoka',sans-serif;cursor:pointer;text-decoration:none;color:#1d1b4d;background:var(--sun);transition:transform .15s}
+.btn:hover{transform:scale(1.06) rotate(-1deg)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.btn.alt{background:var(--teal);color:#06302b}.btn.pink{background:var(--pink);color:#fff}
+main{max-width:1000px;margin:-50px auto 0;padding:0 18px 60px;position:relative}
+.intro{background:var(--card);border-radius:28px;padding:28px;box-shadow:0 8px 0 var(--sun);margin-bottom:40px}
+.intro h2{font-size:2rem;margin-bottom:10px}
+.dance{background:var(--card);border-radius:28px;overflow:hidden;margin-bottom:36px;border:3px solid var(--c);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}
+@media(max-width:720px){.dance{grid-template-columns:1fr}}
+.dance svg{width:100%;height:100%;min-height:260px;display:block;background:var(--c)}
+.body{padding:24px}
+.body h3{font-size:1.9rem;color:var(--c-text,var(--pink))}
+.tag{display:inline-block;background:var(--c);color:#1d1b4d;border-radius:999px;padding:2px 14px;font-size:.9rem;font-weight:600;margin-bottom:8px}
+.fact{background:rgba(255,183,3,.2);border-left:6px solid var(--sun);padding:10px 14px;border-radius:0 14px 14px 0;margin:12px 0}
+.media{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.mood{font-size:.95rem;opacity:.85;margin:6px 0 0}
+.quiz{background:var(--ink);color:#fff8ec;border-radius:28px;padding:30px;text-align:center}
+.quiz h2{color:var(--sun);font-size:2rem;margin-bottom:12px}
+.opts{display:grid;gap:10px;max-width:520px;margin:16px auto}
+.opts button{background:#fff8ec;color:#1d1b4d;border:0;border-radius:16px;padding:12px;font:500 1rem 'Fredoka',sans-serif;cursor:pointer}
+.opts button.ok{background:var(--teal)}.opts button.no{background:var(--pink);color:#fff}
+#score{font-weight:600;min-height:1.6em}
+footer{text-align:center;padding:20px;font-size:.9rem;opacity:.8}
+</style>
+</head>
+<body>
+<header>
+  <div class="orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+  <h1>Cuando el cuerpo reza</h1>
+  <p>Mucho antes de los libros, las personas ya le hablaban a lo sagrado bailando. Viaja por cinco culturas, escucha su música y descubre cómo la danza se volvió oración.</p>
+  <a class="btn" href="#viaje">Empezar el viaje</a>
+</header>
+
+<main id="viaje">
+  <section class="intro">
+    <h2>¿Por qué se baila en la religión?</h2>
+    <p>Bailar sirve para agradecer, pedir lluvia, recordar historias, entrar en calma o sentirse parte de una comunidad. Cada tradición usa el movimiento de forma distinta, pero todas comparten una idea: <strong>el cuerpo también puede rezar</strong>. Pulsa “Escuchar” en cada parada para oír un ritmo inspirado en su música.</p>
+  </section>
+
+  <!-- 1 SUFÍ -->
+  <article class="dance" style="--c:#12b5a0">
+    <svg viewBox="0 0 300 300" role="img" aria-label="Derviche girando con falda blanca bajo la luna">
+      <circle cx="230" cy="60" r="28" fill="#fff8ec"/><circle cx="240" cy="54" r="26" fill="#12b5a0"/>
+      <g fill="none" stroke="#fff8ec" stroke-width="3" opacity=".6"><ellipse cx="150" cy="255" rx="95" ry="16"/><ellipse cx="150" cy="255" rx="60" ry="9"/></g>
+      <path d="M150 140 L80 250 Q150 275 220 250 Z" fill="#fff8ec"/>
+      <rect x="138" y="105" width="24" height="40" rx="10" fill="#fff8ec"/>
+      <rect x="140" y="70" width="20" height="38" rx="6" fill="#8a4b1d"/><circle cx="150" cy="80" r="14" fill="#f2c9a0"/>
+      <path d="M150 120 L95 90" stroke="#fff8ec" stroke-width="9" stroke-linecap="round"/><path d="M150 120 L205 150" stroke="#fff8ec" stroke-width="9" stroke-linecap="round"/>
+    </svg>
+    <div class="body">
+      <span class="tag">Sufismo (Islam) · Turquía</span>
+      <h3>Los derviches que giran</h3>
+      <p>Los seguidores de Rumi practican el <em>sema</em>: giran sobre sí mismos con un brazo hacia el cielo y otro hacia la tierra. Giran para acercarse a Dios, como los planetas dan vueltas alrededor del sol.</p>
+      <div class="fact"><strong>Dato curioso:</strong> la falda blanca simboliza la mortaja del ego y el sombrero alto, su lápida.</div>
+      <p class="mood">Música: flauta <em>ney</em>, tambor <em>kudüm</em> y cantos devocionales.</p>
+      <div class="media"><button class="btn alt" data-play="sufi">▶ Escuchar</button><a class="btn pink" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=sema+ceremonia+derviches+mevlevi">🎬 Ver video</a><a class="btn" target="_blank" rel="noopener" href="https://commons.wikimedia.org/w/index.php?search=sema+whirling+dervishes&ns6=1">🖼 Más imágenes</a></div>
+    </div>
+  </article>
+
+  <!-- 2 INDIA -->
+  <article class="dance" style="--c:#e63e8b">
+    <svg viewBox="0 0 300 300" role="img" aria-label="Bailarina de Bharatanatyam frente a un templo">
+      <path d="M40 270V150l30-30 30 30v120M200 270V150l30-30 30 30v120" fill="#ffb703" opacity=".85"/>
+      <circle cx="150" cy="90" r="46" fill="#ffb703" opacity=".5"/>
+      <path d="M118 270 L150 170 L182 270" fill="#12b5a0"/><path d="M118 270 Q150 250 182 270" fill="#1d1b4d"/>
+      <rect x="136" y="115" width="28" height="60" rx="12" fill="#ffb703"/><circle cx="150" cy="98" r="15" fill="#c98a5a"/>
+      <path d="M150 138 L82 108 M150 138 L220 170" stroke="#c98a5a" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="82" cy="108" r="7" fill="#fff"/><circle cx="220" cy="170" r="7" fill="#fff"/>
+    </svg>
+    <div class="body">
+      <span class="tag">Hinduismo · India</span>
+      <h3>Bharatanatyam: contar a los dioses</h3>
+      <p>Nació en los templos del sur de la India. Cada gesto de las manos (<em>mudras</em>) y de los ojos cuenta historias de dioses como Shiva, Krishna o Lakshmi. Bailar era una forma de ofrenda diaria.</p>
+      <div class="fact"><strong>Dato curioso:</strong> existen más de 50 gestos de manos; uno puede significar flor de loto, otro un pez.</div>
+      <p class="mood">Música: tambores <em>tabla</em> y <em>mridangam</em>, violín, flauta y un zumbido constante (bordón).</p>
+      <div class="media"><button class="btn alt" data-play="india">▶ Escuchar</button><a class="btn pink" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=bharatanatyam+danza+templo+india">🎬 Ver video</a><a class="btn" target="_blank" rel="noopener" href="https://commons.wikimedia.org/w/index.php?search=bharatanatyam&ns6=1">🖼 Más imágenes</a></div>
+    </div>
+  </article>
+
+  <!-- 3 ÁFRICA -->
+  <article class="dance" style="--c:#ffb703">
+    <svg viewBox="0 0 300 300" role="img" aria-label="Bailarín junto a tambores batá">
+      <circle cx="150" cy="150" r="130" fill="#e63e8b" opacity=".4"/>
+      <ellipse cx="70" cy="245" rx="34" ry="14" fill="#8a4b1d"/><path d="M36 245 Q70 300 104 245" fill="#a35a22"/>
+      <ellipse cx="235" cy="245" rx="34" ry="14" fill="#8a4b1d"/><path d="M201 245 Q235 300 269 245" fill="#a35a22"/>
+      <path d="M130 240 L145 150 L170 150 L185 240" fill="#12b5a0"/><rect x="142" y="110" width="30" height="50" rx="12" fill="#e63e8b"/>
+      <circle cx="157" cy="92" r="16" fill="#5a2e14"/><path d="M142 84 q15 -22 30 0" fill="#ffb703"/>
+      <path d="M145 125 L95 75 M170 125 L220 75" stroke="#5a2e14" stroke-width="9" stroke-linecap="round"/>
+    </svg>
+    <div class="body">
+      <span class="tag">Tradición yoruba · Nigeria y Cuba</span>
+      <h3>Los tambores llaman a los orishas</h3>
+      <p>En la religión yoruba, cada orisha tiene su ritmo y su baile. Cuando suenan los tambores <em>batá</em>, la comunidad baila para saludar a la deidad. Esa tradición cruzó el océano y hoy vive en la santería cubana y en el candomblé de Brasil.</p>
+      <div class="fact"><strong>Dato curioso:</strong> los tambores “hablan”: imitan el tono de la lengua yoruba para enviar mensajes.</div>
+      <p class="mood">Música: tambores batá, campanas y coros de pregunta y respuesta.</p>
+      <div class="media"><button class="btn alt" data-play="africa">▶ Escuchar</button><a class="btn pink" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=tambores+bata+orishas+danza+yoruba">🎬 Ver video</a><a class="btn" target="_blank" rel="noopener" href="https://commons.wikimedia.org/w/index.php?search=bata+drums+yoruba&ns6=1">🖼 Más imágenes</a></div>
+    </div>
+  </article>
+
+  <!-- 4 ANDES -->
+  <article class="dance" style="--c:#7b61ff">
+    <svg viewBox="0 0 300 300" role="img" aria-label="Danzante andino bajo el sol del Inti Raymi">
+      <circle cx="150" cy="80" r="52" fill="#ffb703"/>
+      <g stroke="#ffb703" stroke-width="6" stroke-linecap="round"><path d="M150 8v-0M150 8v8M60 80h-10M240 80h10M86 16l7 7M214 16l-7 7"/></g>
+      <path d="M0 270 L90 170 L150 230 L230 150 L300 270Z" fill="#1d1b4d" opacity=".5"/>
+      <path d="M120 270 L135 175 L175 175 L190 270Z" fill="#e63e8b"/><rect x="138" y="130" width="34" height="50" rx="12" fill="#12b5a0"/>
+      <circle cx="155" cy="112" r="15" fill="#c98a5a"/><path d="M135 105 l-8 -26 l18 14 l10 -20 l10 20 l18 -14 l-8 26z" fill="#ffb703"/>
+      <path d="M140 150 L100 190 M170 150 L212 185" stroke="#c98a5a" stroke-width="9" stroke-linecap="round"/>
+    </svg>
+    <div class="body">
+      <span class="tag">Pueblos andinos · Colombia, Perú, Ecuador</span>
+      <h3>Bailar para agradecer al Sol y a la Pachamama</h3>
+      <p>En los Andes se baila en ceremonias como el Inti Raymi, la fiesta del Sol. Hoy esas tradiciones se mezclan con el catolicismo en fiestas patronales y carnavales, donde se baila ante santos y vírgenes con trajes llenos de color.</p>
+      <div class="fact"><strong>Dato curioso:</strong> esta mezcla de creencias se llama <em>sincretismo</em>, y en América Latina está en casi todas las fiestas religiosas.</div>
+      <p class="mood">Música: quena y zampoña (flautas), charango, bombo y cajas.</p>
+      <div class="media"><button class="btn alt" data-play="andes">▶ Escuchar</button><a class="btn pink" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=inti+raymi+danza+andina+musica">🎬 Ver video</a><a class="btn" target="_blank" rel="noopener" href="https://commons.wikimedia.org/w/index.php?search=inti+raymi&ns6=1">🖼 Más imágenes</a></div>
+    </div>
+  </article>
+
+  <!-- 5 JUDÍA -->
+  <article class="dance" style="--c:#ff8a4c">
+    <svg viewBox="0 0 300 300" role="img" aria-label="Círculo de personas bailando la hora">
+      <path d="M150 40 l20 35 h-40z M150 90 l-20 -35 h40z" fill="none" stroke="#fff8ec" stroke-width="5" transform="translate(0 0)"/>
+      <ellipse cx="150" cy="205" rx="105" ry="45" fill="none" stroke="#fff8ec" stroke-width="3" stroke-dasharray="6 8"/>
+      <g fill="#1d1b4d"><circle cx="60" cy="190" r="13"/><circle cx="105" cy="168" r="13"/><circle cx="195" cy="168" r="13"/><circle cx="240" cy="190" r="13"/><circle cx="85" cy="240" r="13"/><circle cx="150" cy="252" r="13"/><circle cx="215" cy="240" r="13"/></g>
+      <g fill="#fff8ec"><rect x="49" y="205" width="22" height="30" rx="9"/><rect x="94" y="183" width="22" height="30" rx="9"/><rect x="184" y="183" width="22" height="30" rx="9"/><rect x="229" y="205" width="22" height="30" rx="9"/></g>
+    </svg>
+    <div class="body">
+      <span class="tag">Judaísmo · Israel y el mundo</span>
+      <h3>La hora y el baile de la alegría</h3>
+      <p>En fiestas como Simjat Torá y en las bodas, las comunidades judías bailan en círculo tomadas de las manos. El baile expresa alegría por la Torá y recuerda que nadie reza solo: el círculo no tiene primero ni último.</p>
+      <div class="fact"><strong>Dato curioso:</strong> la Biblia cuenta que el rey David bailó con todas sus fuerzas delante del Arca.</div>
+      <p class="mood">Música: clarinete, violín, acordeón y palmas, con ritmo que se acelera.</p>
+      <div class="media"><button class="btn alt" data-play="hora">▶ Escuchar</button><a class="btn pink" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=hava+nagila+danza+hora+simjat+tora">🎬 Ver video</a><a class="btn" target="_blank" rel="noopener" href="https://commons.wikimedia.org/w/index.php?search=hora+dance+israel&ns6=1">🖼 Más imágenes</a></div>
+    </div>
+  </article>
+
+  <section class="quiz">
+    <h2>¿Cuánto aprendiste?</h2>
+    <p id="q"></p>
+    <div class="opts" id="opts"></div>
+    <div id="score" aria-live="polite"></div>
+    <button class="btn" id="next" style="display:none">Siguiente pregunta</button>
+  </section>
+</main>
+<footer>Los audios son ritmos sintetizados en tu navegador, inspirados en cada tradición. Los videos se abren en YouTube.</footer>
+
+<script>
+// ---------- AUDIO (Web Audio API, sin archivos externos) ----------
+let ctx, stopAll=()=>{}, playingBtn=null;
+const hz=m=>440*Math.pow(2,(m-69)/12);
+function tone(t,m,d,type,v,vib){const o=ctx.createOscillator(),g=ctx.createGain();o.type=type;o.frequency.value=hz(m);
+  if(vib){const l=ctx.createOscillator(),lg=ctx.createGain();l.frequency.value=5;lg.gain.value=6;l.connect(lg);lg.connect(o.frequency);l.start(t);l.stop(t+d)}
+  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.04);g.gain.exponentialRampToValueAtTime(.001,t+d);
+  o.connect(g).connect(ctx.destination);o.start(t);o.stop(t+d+.05)}
+function drum(t,f,v,d=.25){const o=ctx.createOscillator(),g=ctx.createGain();o.frequency.setValueAtTime(f*1.8,t);o.frequency.exponentialRampToValueAtTime(f,t+.06);
+  g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g).connect(ctx.destination);o.start(t);o.stop(t+d+.05)}
+function bell(t,m,v){tone(t,m,.3,'triangle',v)}
+const songs={
+  sufi(t){ // flauta lenta, escala frigia en re + tambor suave
+    const n=[62,63,65,67,65,63,62,60];n.forEach((m,i)=>tone(t+i*.9,m+12,1.1,'sine',.18,true));
+    for(let i=0;i<8;i++)drum(t+i*.9,80,.5,.4)},
+  india(t){ // bordón + patrón de tabla (teental simplificado)
+    tone(t,50,7.5,'sawtooth',.05);tone(t,57,7.5,'sawtooth',.04);
+    const p=[1,0,.6,.6,1,0,.6,.6,.8,0,.6,.6,.8,.5,.6,.6];
+    for(let r=0;r<2;r++)p.forEach((v,i)=>{if(v)drum(t+(r*16+i)*.22,i%4==0?110:220,v*.7,.2)});
+    [69,71,73,76,73,71,69,68].forEach((m,i)=>tone(t+i*.9,m,.7,'triangle',.12,true))},
+  africa(t){ // polirritmo de tambores y campana
+    for(let i=0;i<32;i++){const x=t+i*.2;
+      if(i%4==0)drum(x,90,.8);if([2,5,7].includes(i%8))drum(x,160,.5,.15);if([1,3,6].includes(i%8))drum(x,240,.35,.1);
+      if([0,3,6,10,12].includes(i%12))bell(x,88,.12)}},
+  andes(t){ // flauta pentatónica + bombo
+    const n=[69,72,74,76,74,72,69,72,76,79,76,74,72,69];
+    n.forEach((m,i)=>tone(t+i*.5,m,.55,'sine',.22,true));
+    for(let i=0;i<14;i++){if(i%2==0)drum(t+i*.5,70,.7,.3);else drum(t+i*.5,150,.25,.1)}},
+  hora(t){ // melodía menor armónica que acelera
+    const n=[69,72,76,75,76,72,69,68,69,72,69,64];let x=t;
+    for(let r=0;r<2;r++)n.forEach((m,i)=>{const d=.36-r*.1;tone(x,m,d*1.2,'square',.07);if(i%2==0)drum(x,100,.5,.15);else drum(x,200,.25,.08);x+=d})}
+};
+document.querySelectorAll('[data-play]').forEach(b=>b.addEventListener('click',()=>{
+  const was=playingBtn===b;stopAll();if(was)return;
+  ctx=new (window.AudioContext||window.webkitAudioContext)();
+  songs[b.dataset.play](ctx.currentTime+.05);
+  b.textContent='⏹ Detener';playingBtn=b;const c=ctx;
+  const to=setTimeout(()=>stopAll(),9000);
+  stopAll=()=>{clearTimeout(to);try{c.close()}catch(e){}if(playingBtn){playingBtn.textContent='▶ Escuchar';playingBtn=null}stopAll=()=>{}};
+}));
+
+// ---------- QUIZ ----------
+const Q=[
+ ["¿Qué hacen los derviches sufíes para acercarse a Dios?",["Saltan en círculo","Giran sobre sí mismos","Bailan con máscaras"],1],
+ ["¿Cómo se llaman los gestos de manos del Bharatanatyam?",["Mudras","Orishas","Quenas"],0],
+ ["¿Qué instrumentos llaman a los orishas?",["Tambores batá","Violines","Acordeones"],0],
+ ["¿Cómo se llama la mezcla de creencias antiguas con el catolicismo?",["Sincretismo","Sema","Hora"],0],
+ ["¿Cómo es la forma del baile judío llamado hora?",["Una fila","Un círculo","Una pareja"],1]];
+let qi=0,pts=0;
+const $=id=>document.getElementById(id);
+function show(){const [q,o,a]=Q[qi];$('q').textContent=q;$('opts').innerHTML='';$('next').style.display='none';
+  o.forEach((t,i)=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>{
+    [...$('opts').children].forEach((x,j)=>{x.disabled=true;if(j==a)x.classList.add('ok')});
+    if(i==a){pts++;$('score').textContent='¡Correcto! 🎉 Puntos: '+pts}else{b.classList.add('no');$('score').textContent='Casi. La respuesta correcta está en verde.'}
+    $('next').style.display='inline-block';$('next').textContent=qi<Q.length-1?'Siguiente pregunta':'Ver resultado'};$('opts').appendChild(b)})}
+let done=false;
+$('next').onclick=()=>{
+  if(done){qi=0;pts=0;done=false;$('score').textContent='';show();return}
+  qi++;
+  if(qi<Q.length){show();$('score').textContent=''}
+  else{done=true;$('q').textContent='Terminaste con '+pts+' de '+Q.length+' puntos '+(pts>=4?'🏆':'💪');$('opts').innerHTML='';$('next').textContent='Jugar otra vez'}};
+show();
+</script>
+</body>
+</html>
